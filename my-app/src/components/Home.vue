@@ -50,24 +50,24 @@
 </template>
 
 <script>
-  export default {
-    name: "Home",
-    data: () => ({
-      desserts: [
-        {
-          type: 'Frozen Yogurt',
-          source: 6.0,
-          description: 'dsdsdsdsdsddsd%',
-        },
-      ],
-      headers: [
-        {text: 'Type', value: 'type',},
-        { text: 'Source', value: 'source' },
-        { text: 'Description', value: 'description' },
-        { text: 'Actions', value: 'actions', sortable: false },
-      ],
-    }),
-  }
+export default {
+  name: 'Home',
+  data: () => ({
+    desserts: [
+      {
+        type: 'Frozen Yogurt',
+        source: 6.0,
+        description: 'dsdsdsdsdsddsd%',
+      },
+    ],
+    headers: [
+      { text: 'Type', value: 'type' },
+      { text: 'Source', value: 'source' },
+      { text: 'Description', value: 'description' },
+      { text: 'Actions', value: 'actions', sortable: false },
+    ],
+  }),
+};
 </script>
 
 <style scoped>

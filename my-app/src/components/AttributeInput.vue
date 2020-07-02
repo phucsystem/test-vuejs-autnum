@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="my-4 subtitle-1">
-      Attribute {{ number }}
-    </div>
     <v-text-field
-      v-model="source"
-      :rules="sourceRules"
       label="Name"
       required
     />
@@ -32,22 +27,21 @@
       label="Syntax"
       required
     />
+    <v-divider />
   </div>
 </template>
 
 <script>
-  export default {
-    name: "AttributeInput",
-    props:{
-      number : {
-        type: Number,
-        default: 0
-      }
+export default {
+  name: 'AttributeInput',
+  props: {
+    value: {
+      type: Object,
     },
-    methods:{
-
-    }
-  }
+  },
+  methods: {
+  },
+};
 </script>
 
 <style scoped>

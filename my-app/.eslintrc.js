@@ -1,11 +1,24 @@
+const path = require('path');
+
 module.exports = {
-  extends: [
-    // add more generic rulesets here, such as:
-    // 'eslint:recommended',
-    'plugin:vue/recommended'
-  ],
+  settings: {
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+  },
   rules: {
-    // override/add rules settings here, such as:
-    'vue/no-unused-vars': 'warn'
-  }
-}
+    'no-param-reassign': 0,
+    'no-shadow': 0,
+    'no-use-before-define': ['error', { functions: false }],
+    'arrow-parens': 0,
+    'no-trailing-spaces': 0,
+    'no-return-assign': 0,
+    'class-methods-use-this': 0,
+    'no-plusplus': 0,
+    'vue/no-unused-components': 0,
+  },
+  extends: ['airbnb-base', 'plugin:vue/recommended'],
+  plugins: ['vue'],
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+};

@@ -11,11 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e61bdeb-73d6-4ebd-94a6-5d77cb56969a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/AttributeInput.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/InputForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/AttributeInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/AttributeInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/InputForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/InputForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +50,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,8 +65,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dell\www\test-vuejs-autnum\my-app\src" />
       <recent name="C:\Users\Dell\www\test-vuejs-autnum\my-app" />
+      <recent name="C:\Users\Dell\www\test-vuejs-autnum\my-app\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -72,8 +79,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593610441836</updated>
-      <workItem from="1593610442980" duration="16149000" />
+      <workItem from="1593610442980" duration="26152000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1593657376754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593657376754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,22 +105,42 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="828" y="412" key="#ESLint" timestamp="1593664404128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1593664404128" />
+    <state x="719" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593662063871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593662063871" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593624058804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593624058804" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1593619612966">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1593661557482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593619612966" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1593611970386">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593661557482" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593657378055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593611970386" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593611928547">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593657378055" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593664142580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593611928547" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664142580" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1593665919705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593665919705" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593666655234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593666655234" />
   </component>
 </project>

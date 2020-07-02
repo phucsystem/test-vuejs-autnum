@@ -12,24 +12,24 @@
 </template>
 
 <script>
-  import Home from "./components/Home";
-  import InputForm from "./components/InputForm";
+import Home from './components/Home.vue';
+import InputForm from './components/InputForm.vue';
 
-  export default {
-    name: "App",
-    components: {
-      Home,
-      InputForm
+export default {
+  name: 'App',
+  components: {
+    Home,
+    InputForm,
+  },
+  data() {
+    return {
+      action: 'list',
+    };
+  },
+  methods: {
+    onRoute(action) {
+      this.action = action;
     },
-    data: function () {
-      return {
-        action: 'list'
-      }
-    },
-    methods:{
-      onRoute: function (action) {
-        this.action = action
-      }
-    }
-  }
+  },
+};
 </script>
