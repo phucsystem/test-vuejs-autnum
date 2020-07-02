@@ -15,10 +15,15 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-plusplus': 0,
     'vue/no-unused-components': 0,
+    'vue/no-unused-vars': 0,
+    'no-unused-expressions': 0,
+    'no-unused-vars': 0,
+    'no-empty': 0,
   },
   extends: ['airbnb-base', 'plugin:vue/recommended'],
   plugins: ['vue'],
   parserOptions: {
+    sourceType: 'module',
     parser: 'babel-eslint',
   },
 };

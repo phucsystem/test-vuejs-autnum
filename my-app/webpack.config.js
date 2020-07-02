@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+
 module.exports = {
   rules: [
     {
@@ -19,3 +21,4 @@ module.exports = {
     },
   ],
 };
+/* eslint-enable global-require */

@@ -84,7 +84,7 @@
                   focusable
                 >
                   <v-expansion-panel
-                    v-for="attribute in attributes"
+                    v-for="(attribute, index) in attributes"
                     :key="attribute.number"
                   >
                     <v-expansion-panel-header>
@@ -93,7 +93,8 @@
                     <v-expansion-panel-content>
                       <AttributeInput
                         :key="attribute.number"
-                        :value="attribute"
+                        v-model="attributes[index]"
+                        @remove="removeAttribute"
                       />
                     </v-expansion-panel-content>
                   </v-expansion-panel>
@@ -133,11 +134,18 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import AttributeInput from './AttributeInput.vue';
 
 export default {
   name: 'Inputform',
   components: { AttributeInput },
+  props: {
+    target: {
+      type: Object,
+      default: null,
+    },
+  },
   data: () => ({
     valid: true,
     description: '',
@@ -148,18 +156,60 @@ export default {
     typeItems: ['aut-num', 'aut-num 2', 'aut-num 3', 'aut-num 4'],
     attributes: [],
   }),
+  mounted() {
+    if (this.target) {
+      ({
+        source: this.source,
+        description: this.description,
+        type: this.type,
+        attributes: this.attributes,
+      } = this.target);
+    }
+  },
   methods: {
+    ...mapActions({
+      create: 'resources/create',
+      edit: 'resources/edit',
+    }),
     validate() {
-      this.$refs.form.validate();
+      if (this.$refs.form.validate()) {
+        if (this.target) {
+          this.edit({
+            id: this.target.id,
+            source: this.source,
+            type: this.type,
+            description: this.description,
+            attributes: this.attributes,
+          });
+        } else {
+          this.create({
+            source: this.source,
+            type: this.type,
+            description: this.description,
+            attributes: this.attributes,
+          });
+        }
+
+        this.$emit('route', { action: 'list' });
+      }
     },
     cancel() {
-      this.$emit('route', 'list');
+      this.$emit('route', { action: 'list' });
     },
     addAttribute() {
       const addItem = {
         number: this.attributes.length + 1,
+        name: '',
+        requirement: null,
+        cardinality: null,
+        keys: [],
+        description: '',
+        syntax: '',
       };
       this.attributes = [...this.attributes, addItem];
+    },
+    removeAttribute(number) {
+      this.attributes = this.attributes.filter(i => i.number !== number);
     },
   },
 };

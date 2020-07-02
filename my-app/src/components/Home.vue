@@ -17,7 +17,7 @@
             color="primary"
             dark
             class="mb-2"
-            @click="$emit('route', 'create')"
+            @click="create"
           >
             New Item
           </v-btn>
@@ -25,7 +25,7 @@
             disable-sort
             hide-default-footer
             :headers="headers"
-            :items="desserts"
+            :items="resources"
             item-key="name"
             class="elevation-4"
           >
@@ -33,11 +33,13 @@
               <v-icon
                 small
                 class="mr-2"
+                @click="edit(item)"
               >
                 mdi-pencil
               </v-icon>
               <v-icon
                 small
+                @click="deleteResource(item)"
               >
                 mdi-delete
               </v-icon>
@@ -50,16 +52,11 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
+
 export default {
   name: 'Home',
   data: () => ({
-    desserts: [
-      {
-        type: 'Frozen Yogurt',
-        source: 6.0,
-        description: 'dsdsdsdsdsddsd%',
-      },
-    ],
     headers: [
       { text: 'Type', value: 'type' },
       { text: 'Source', value: 'source' },
@@ -67,6 +64,20 @@ export default {
       { text: 'Actions', value: 'actions', sortable: false },
     ],
   }),
+  computed: {
+    ...mapState('resources', ['resources']),
+  },
+  methods: {
+    ...mapActions({
+      deleteResource: 'resources/delete',
+    }),
+    create() {
+      this.$emit('route', { action: 'create' });
+    },
+    edit(item) {
+      this.$emit('route', { action: 'edit', item });
+    },
+  },
 };
 </script>
 

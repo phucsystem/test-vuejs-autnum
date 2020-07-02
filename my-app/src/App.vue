@@ -6,6 +6,7 @@
     />
     <InputForm
       v-if="action==='create' || action==='edit'"
+      :target="editItem"
       @route="onRoute"
     />
   </v-app>
@@ -24,11 +25,16 @@ export default {
   data() {
     return {
       action: 'list',
+      editItem: null,
     };
   },
   methods: {
-    onRoute(action) {
-      this.action = action;
+    onRoute(event) {
+      this.editItem = null;
+      if (event.action === 'edit') {
+        this.editItem = event.item;
+      }
+      this.action = event.action;
     },
   },
 };
